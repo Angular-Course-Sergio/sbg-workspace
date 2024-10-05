@@ -3,5 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "sbg-side-menu": {
+      "projectType": "library",
+      "root": "projects/sbg-side-menu",
+      "sourceRoot": "projects/sbg-side-menu/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/sbg-side-menu/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/sbg-side-menu/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/sbg-side-menu/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/sbg-side-menu/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
   }
 }
