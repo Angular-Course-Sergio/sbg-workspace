@@ -10,8 +10,7 @@
     "lint": "ng lint",
     "sbg-side-menu:build": "ng build sbg-side-menu",
     "sbg-side-menu:lint": "ng lint sbg-side-menu",
-    "sbg-side-menu:test": "ng test sbg-side-menu --no-watch --no-progress --browsers=ChromeHeadless",
-    "sbg-side-menu:publish": "npm run sbg-side-menu:test && sbg-side-menu:build && npm publish dist/sbg-side-menu"
+    "sbg-side-menu:test": "ng test sbg-side-menu --no-watch --no-progress --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {
