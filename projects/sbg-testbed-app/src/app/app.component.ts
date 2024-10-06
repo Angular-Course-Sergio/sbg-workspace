@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { SbgSideMenuComponent } from 'sbg-side-menu';
+import { SbgSideMenuComponent, TitleColor } from 'sbg-side-menu';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +12,7 @@ import { SbgSideMenuComponent } from 'sbg-side-menu';
 })
 export class AppComponent {
   title = 'sbg-testbed-app';
+
+  TitleColor = TitleColor;
+  isAuthenticated = signal(true);
 }

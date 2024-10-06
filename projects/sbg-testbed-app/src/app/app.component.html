@@ -1,5 +1,6 @@
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
-
-<lib-sbg-side-menu />
+<lib-sbg-side-menu
+  [isAutheticated]="isAuthenticated()"
+  [titleColor]="TitleColor.green"
+  (onSingIn)="isAuthenticated.set(true)"
+  (onSingOut)="isAuthenticated.set(false)"
+/>
