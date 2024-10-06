@@ -6,7 +6,12 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "sbg-side-menu:build": "ng build sbg-side-menu",
+    "sbg-side-menu:lint": "ng lint sbg-side-menu",
+    "sbg-side-menu:test": "ng test sbg-side-menu --no-watch --no-progress --browsers=ChromeHeadless",
+    "sbg-side-menu:publish": "npm run sbg-side-menu:test && sbg-side-menu:build && npm publish dist/sbg-side-menu"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +32,8 @@
     "@angular/cli": "^18.1.4",
     "@angular/compiler-cli": "^18.1.0",
     "@types/jasmine": "~5.1.0",
+    "angular-eslint": "18.3.1",
+    "eslint": "^9.9.1",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -34,6 +41,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^18.2.0",
-    "typescript": "~5.5.2"
+    "typescript": "~5.5.2",
+    "typescript-eslint": "8.2.0"
   }
 }
