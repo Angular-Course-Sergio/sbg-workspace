@@ -1,6 +1,6 @@
 {
   "name": "sbg-side-menu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Angular-Course-Sergio/sbg-workspace"
@@ -10,6 +10,7 @@
     "sbg",
     "do-not-use"
   ],
+  "license": "MIT",
   "author": "Sergio Barreras",
   "bugs": {
     "url": "https://github.com/Angular-Course-Sergio/sbg-workspace/issues"
