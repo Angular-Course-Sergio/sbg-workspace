@@ -16,6 +16,8 @@ export enum TitleColor {
 })
 export class SbgSideMenuComponent {
   isAutheticated = input(false);
+  title = input('APX');
+  subTitle = input('Corp');
 
   titleColor = input<TitleColor>(TitleColor.purple);
 
